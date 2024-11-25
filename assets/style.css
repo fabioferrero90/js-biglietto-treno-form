@@ -5,19 +5,36 @@ body {
   font-style: normal;
 }
 
+.navbar {
+  position: sticky;
+  height:80px;
+  top:0;
+}
+
 .sidebar {
-  height:100vh;
-  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+  height: calc( 100vh - 80px );
+  box-shadow: 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  background-color: rgb(241, 241, 241);
+  padding:20px;
+  border-radius:0.8rem;
 }
 
 .main-content {
   padding:30px;
 }
 
+.alert {
+  margin-top:25vh;
+}
+
 .ticket > h4 {
   background-color: green;
   padding: 30px;
   color:white;
+  border-radius:0.8rem;
 }
 
 .ticketinfo  {
@@ -45,6 +62,33 @@ body {
 }
 
 .ticketinfo.price{
-  background-color: rgb(184, 184, 184);
-  padding: 30px;
+  background-color: rgb(241, 241, 241);
+  padding: 20px 30px;
+  border-radius:0.8rem;
+}
+
+.alertDelay {
+  color: red;
+}
+
+.btn.btn-green {
+  color:white;
+}
+
+.loader {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid green;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+} 
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
