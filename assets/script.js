@@ -92,6 +92,7 @@ elements.buyButton.addEventListener('click', (event) => {
 function simulateLoading() {
 
   function showLoader() {
+    elements.ticket.classList.add('d-none');
     document.getElementById('loader').classList.remove('d-none');
   }
 

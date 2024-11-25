@@ -31,7 +31,7 @@ form {
 }
 
 .ticket > h4 {
-  background-color: green;
+  background-color: rgb(21, 115, 71);
   padding: 30px;
   color:white;
   border-radius:0.8rem;
@@ -42,7 +42,7 @@ form {
 }
 
 .ticketinfo .label.fullname-label {
-  color:green;
+  color:rgb(21, 115, 71);
 }
 
 .ticketinfo .label {
@@ -68,20 +68,17 @@ form {
 }
 
 .alertDelay {
+  padding:1% 10%;
   color: red;
-}
-
-.btn.btn-green {
-  color:white;
 }
 
 .loader {
   position: relative;
   left: 50%;
-  top: 50%;
+  top: 30%;
   transform: translate(-50%, -50%);
   border: 16px solid #f3f3f3;
-  border-top: 16px solid green;
+  border-top: 16px solid rgb(21, 115, 71);
   border-radius: 50%;
   width: 120px;
   height: 120px;
