@@ -1,0 +1,50 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sidebar {
+  height:100vh;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+  padding:30px;
+}
+
+.ticket > h4 {
+  background-color: green;
+  padding: 30px;
+  color:white;
+}
+
+.ticketinfo  {
+  margin:20px 0;
+}
+
+.ticketinfo .label.fullname-label {
+  color:green;
+}
+
+.ticketinfo .label {
+  font-size:1.3rem;
+  font-weight:700;
+}
+
+.ticketinfo .data.price-data {
+  font-size:1.2rem;
+  font-weight:600;
+}
+
+.ticketinfo .data.price-data::after {
+  content: '\20AC  Tasse comprese';
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.ticketinfo.price{
+  background-color: rgb(184, 184, 184);
+  padding: 30px;
+}
