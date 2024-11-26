@@ -20,6 +20,7 @@ const elements = {
   delay: document.getElementById('delay'),
 
   // Addon
+  loader: document.getElementById('loader'),
   buyButton: document.querySelector('.buy-button'),
 }
 
@@ -83,25 +84,15 @@ function getTicketPrice(km, age) {
   return ['Tariffa Standard', ticketPrice]
 }
 
-elements.buyButton.addEventListener('click', (event) => {
+elements.buyButton.addEventListener('click', () => {
   alert("Ti sei reso conto che questa è solo una pagina di esercizio?, se vuoi regalarmi dei soldi scrivimi in privato!")
 })
 
-
-
 function simulateLoading() {
+  toggleLoaderVisibility(true); setTimeout(() => toggleLoaderVisibility(false), 2000);
+}
 
-  function showLoader() {
-    elements.ticket.classList.add('d-none');
-    document.getElementById('loader').classList.remove('d-none');
-  }
-
-  function hideLoader() {
-    document.getElementById('loader').classList.add('d-none');
-    elements.ticket.classList.remove('d-none')
-  }
-
-  // Simula un caricamento di 2 secondi
-  showLoader();
-  setTimeout(hideLoader, 2000);
+function toggleLoaderVisibility(isLoading) {
+  elements.loader.classList.toggle('d-none', !isLoading);
+  elements.ticket.classList.toggle('d-none', isLoading);
 }
